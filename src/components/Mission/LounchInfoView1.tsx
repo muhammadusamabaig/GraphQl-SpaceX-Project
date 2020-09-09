@@ -1,12 +1,12 @@
 import React from 'react'
 import {LaunchinfoQuery} from '../../generated/graphql'
 interface Props{
-    data:LaunchinfoQuery
+    data2:LaunchinfoQuery
 }
-const LounchInfoView:React.FC<Props>=(props)=>{
+const LounchInfoView1:React.FC<Props>=({data2})=>{
 
-const {data}=props
-const {launches}=data
+
+const {launches}=data2
 return(
 <div>
 <h1 className="col-12 text-center" style={{color:"#0d506b"}}>Recorde Of SpaceX Missions</h1>
@@ -43,4 +43,4 @@ return(
 </div>
         )
 }
-export default LounchInfoView
+export default LounchInfoView1
